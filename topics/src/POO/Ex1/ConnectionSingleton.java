@@ -2,6 +2,7 @@ package POO.Ex1;
 
 import java.sql.*;
 
+//1st Ex
 public class ConnectionSingleton {
 
     private static Connection connection = null;
