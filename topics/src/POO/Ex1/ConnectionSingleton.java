@@ -1,14 +1,14 @@
-package POO;
+package POO.Ex1;
 
 import java.sql.*;
 
 public class ConnectionSingleton {
 
     private static Connection connection = null;
-    private String driver;
-    private String url;
-    private String user;
-    private String password;
+        private String driver;
+        private String url;
+        private String user;
+        private String password;
 
     private ConnectionSingleton() {
         String driver = "com.mysql.jdbc.Driver";
