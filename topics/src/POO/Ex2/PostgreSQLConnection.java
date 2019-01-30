@@ -11,7 +11,7 @@ public class PostgreSQLConnection implements ConnectionDB {
     String user;
     String password;
 
-    private PostgreSQLConnection() {
+    public PostgreSQLConnection() {
         String driver = "org.postgresql.Driver";
         String url = "jdbc:postgresql://localhost/test";
         String user = "user";
@@ -25,6 +25,7 @@ public class PostgreSQLConnection implements ConnectionDB {
             e.printStackTrace();
         }
     }
+
 
     public Connection getConnection() { return connection; }
 }

@@ -11,7 +11,7 @@ public class MySQLConnection implements ConnectionDB {
     String user;
     String password;
 
-    private MySQLConnection() {
+    public MySQLConnection() {
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/test";
         String user = "user";

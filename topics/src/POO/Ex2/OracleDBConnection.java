@@ -11,7 +11,7 @@ public class OracleDBConnection implements ConnectionDB {
     String user;
     String password;
 
-    private OracleDBConnection() {
+    public OracleDBConnection() {
         String driver = "oracle.jdbc.driver.OracleDriver";
         String url = "jdbc:oracle:thin:@localhost:1521:test";
         String user = "user";

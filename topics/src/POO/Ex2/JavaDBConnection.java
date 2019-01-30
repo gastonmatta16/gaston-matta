@@ -11,7 +11,7 @@ public class JavaDBConnection implements ConnectionDB {
     String user;
     String password;
 
-    private JavaDBConnection() {
+    public JavaDBConnection() {
         String driver = "org.apache.derby.jdbc.EmbeddedDriver";
         String url = "jdbc:derby://localhost/test";
         String user = "user";
