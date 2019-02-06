@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>TopicMaven</groupId>
-    <artifactId>TopicMaven</artifactId>
+    <groupId>TopicTDD</groupId>
+    <artifactId>TopicTDD</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -34,7 +34,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
                 <configuration>
-                    <skipTests>true</skipTests>
+                    <skipTests>false</skipTests>
                 </configuration>
             </plugin>
             <plugin>
@@ -49,4 +49,6 @@
 
         </plugins>
     </build>
+
+
 </project>
