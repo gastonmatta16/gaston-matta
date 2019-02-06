@@ -1,3 +1,6 @@
+package RecentFileList;
+
+import RecentFileList.RecentFileList;
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
@@ -7,14 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class RecentFileListTest {
 
     @Test
-    void firstTimeRunningApp_listItsEmpty() {
+    void firstTimeRunningAppListItsEmpty() {
         RecentFileList list = new RecentFileList();
         LinkedList<String> linkedList = list.getList();
         assertTrue(linkedList.isEmpty());
     }
 
     @Test
-    void openFile_firstElement_is_lastOpened(){
+    void openFileFirstElementIsLastOpened(){
         RecentFileList list = new RecentFileList();
         list.openFile("file_1");
         list.openFile("file_2");
@@ -25,7 +28,7 @@ class RecentFileListTest {
     }
 
     @Test
-    void openFile_multipleTimes_noRepetitions() {
+    void openFileMultipleTimesNoRepetitions() {
         RecentFileList list = new RecentFileList();
         list.openFile("file_1");
         list.openFile("file_1");
@@ -35,7 +38,7 @@ class RecentFileListTest {
     }
 
     @Test
-    void list_Gets_Full_At_15_Elements() {
+    void listGetsFullAt15Elements() {
         RecentFileList list = new RecentFileList();
         list.openFile("file_1");
         list.openFile("file_2");
